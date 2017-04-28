@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name: 1st-woo
  * Plugin URI: https://github.com/kulchenkoalex/1st-woo-plugin
@@ -15,7 +16,7 @@
  */
 
 
-<?php
+
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
