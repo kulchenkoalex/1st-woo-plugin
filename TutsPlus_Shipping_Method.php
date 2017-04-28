@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: romansolomashenko
- * Date: 25.04.17
- * Time: 2:27 PM
- */
+
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
@@ -22,7 +17,7 @@ if ( ! class_exists( 'TutsPlus_Shipping_Method' ) ) {
             $this->method_title = __( 'TutsPlus Shipping', 'tutsplus' );
             $this->method_description = __( 'Custom Shipping Method for TutsPlus', 'tutsplus' );
             // Availability & Countries
-            /*$this->availability = 'including';
+            $this->availability = 'including';
             $this->countries = array(
                 'US', // Unites States of America
                 'CA', // Canada
@@ -31,8 +26,8 @@ if ( ! class_exists( 'TutsPlus_Shipping_Method' ) ) {
                 'IT',   // Italy
                 'ES', // Spain
                 'HR'  // Croatia
-            );*/
-            //$this->enabled = isset( $this->settings['enabled'] ) ? $this->settings['enabled'] : 'yes';
+            );
+            $this->enabled = isset( $this->settings['enabled'] ) ? $this->settings['enabled'] : 'yes';
             $this->enabled  = "yes";
             $this->title = isset( $this->settings['title'] ) ? $this->settings['title'] : __( 'TutsPlus Shipping', 'tutsplus' );
             $this->init();
